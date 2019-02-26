@@ -4,6 +4,12 @@ imports:
     - { resource: services.yml }
     - { resource: "@EventBundle/Resources/config/services.yml" }
     - { resource: "@UserBundle/Resources/config/services.yml" }
+    - { resource: "@CommunicationBundle/Resources/config/services.yml" }
+    - { resource: "@ReclamationBundle/Resources/config/services.yml" }
+    - { resource: "@ProfilingBundle/Resources/config/services.yml" }
+    - { resource: "@ReservationBundle/Resources/config/services.yml" }
+    - { resource: "@BlogBundle/Resources/config/services.yml" }
+    - { resource: "@BackOfficeIndexBundle/Resources/config/services.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -37,6 +43,7 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    form_themes: ['bootstrap_4_layout.html.twig']
 
 # Doctrine Configuration
 doctrine:
@@ -64,6 +71,8 @@ doctrine:
 swiftmailer:
     transport: '%mailer_transport%'
     host: '%mailer_host%'
+    port: '%mailer_port%'
+    encryption: '%mailer_encryption%'
     username: '%mailer_user%'
     password: '%mailer_password%'
     spool: { type: memory }
@@ -80,3 +89,4 @@ fos_user:
     from_email:
         address: "tech-events@esprit.tn"
         sender_name: "tech-events"
+
