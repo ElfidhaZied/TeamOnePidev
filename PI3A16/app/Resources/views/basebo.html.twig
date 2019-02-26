@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> upstream/Hosni
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +14,7 @@
     {% block title %}<title>Tech-Events Admin</title>{% endblock title %}
     <!-- plugins:css -->
     {% block css %}
+<<<<<<< HEAD
     <link rel="stylesheet" href="{{ asset('bo/vendors/iconfonts/mdi/css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('bo/vendors/css/vendor.bundle.base.css') }}" >
     <link rel="stylesheet" href="{{ asset('bo/vendors/css/vendor.bundle.addons.css') }}">
@@ -19,6 +23,16 @@
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <link rel="stylesheet" href="{{ asset('bo/css/style.css') }}">
+=======
+        <link rel="stylesheet" href="{{ asset('bo/vendors/iconfonts/mdi/css/materialdesignicons.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('bo/vendors/css/vendor.bundle.base.css') }}" >
+        <link rel="stylesheet" href="{{ asset('bo/vendors/css/vendor.bundle.addons.css') }}">
+        <!-- endinject -->
+        <!-- plugin css for this page -->
+        <!-- End plugin css for this page -->
+        <!-- inject:css -->
+        <link rel="stylesheet" href="{{ asset('bo/css/style.css') }}">
+>>>>>>> upstream/Hosni
     {% endblock css  %}
     <!-- endinject -->
     <link rel="shortcut icon" href="{{ asset('bo/images/favicon.png') }}" />
@@ -243,10 +257,18 @@
                 <!-- ceci un exemple d'un boutons simple -->
                 <li class="nav-item">
                     <a class="nav-link" href=""   ><!--metre le lien de la page dans href exmeple "{{ asset('exemple') }}" -->
+<<<<<<< HEAD
                     <i class="menu-icon mdi mdi-backup-restore"></i>
                     <span class="menu-title">Form elements</span>
                     </a>
                 </li>
+=======
+                        <i class="menu-icon mdi mdi-backup-restore"></i>
+                        <span class="menu-title">Form elements</span>
+                    </a>
+                </li>
+
+>>>>>>> upstream/Hosni
                 <!-- ceci un exemple d'un bouton qui a deux boutons a l'interieur pour mieux catagorisé -->
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic" >
@@ -269,7 +291,22 @@
 
                 <!-- ICI -->
 
+<<<<<<< HEAD
 
+=======
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('affichercategoriesbo') }}"><!--metre le lien de la page dans href exmeple "{{ asset('exemple') }}" -->
+                        <i class="menu-icon mdi mdi-backup-restore"></i>
+                        <span class="menu-title">Gestion des catégories</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('afficherarticlebo') }}"   ><!--metre le lien de la page dans href exmeple "{{ asset('exemple') }}" -->
+                        <i class="menu-icon mdi mdi-backup-restore"></i>
+                        <span class="menu-title">Gestion des articles</span>
+                    </a>
+                </li>
+>>>>>>> upstream/Hosni
 
 
 
@@ -312,6 +349,7 @@
 
 <!-- plugins:js -->
 {% block js %}
+<<<<<<< HEAD
 <script src=" {{ asset('bo/vendors/js/vendor.bundle.base.js') }} "></script>
 <script src=" {{ asset('bo/vendors/js/vendor.bundle.addons.js') }} "></script>
 <!-- endinject -->
@@ -324,6 +362,20 @@
 <!-- Custom js for this page-->
 <script src="{{ asset('bo/js/dashboard.js') }}"></script>
 <!-- End custom js for this page-->
+=======
+    <script src=" {{ asset('bo/vendors/js/vendor.bundle.base.js') }} "></script>
+    <script src=" {{ asset('bo/vendors/js/vendor.bundle.addons.js') }} "></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="{{ asset('bo/js/off-canvas.js') }}"></script>
+    <script src="{{ asset('bo/js/misc.js') }}"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="{{ asset('bo/js/dashboard.js') }}"></script>
+    <!-- End custom js for this page-->
+>>>>>>> upstream/Hosni
 {% endblock js %}
 </body>
 

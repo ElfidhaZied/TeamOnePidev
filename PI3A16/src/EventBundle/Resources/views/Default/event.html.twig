@@ -25,7 +25,11 @@
         <div class="container">
             <div class="container" style="padding-bottom: 50px">
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+<<<<<<< HEAD
                     {% if(app.user.hasRole("ROLE_ORGANISATEUR")) %}
+=======
+                    {% if(app.user.hasRole("ORGANISATEUR")) %}
+>>>>>>> upstream/Hosni
                         <div class="button header_button">
                             <a class="dropdown-item" href="{{ path('addevent') }}">
                                 Add Event

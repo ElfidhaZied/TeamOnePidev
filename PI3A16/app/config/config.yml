@@ -9,7 +9,10 @@ imports:
     - { resource: "@ProfilingBundle/Resources/config/services.yml" }
     - { resource: "@ReservationBundle/Resources/config/services.yml" }
     - { resource: "@BlogBundle/Resources/config/services.yml" }
+<<<<<<< HEAD
     - { resource: "@BackOfficeIndexBundle/Resources/config/services.yml" }
+=======
+>>>>>>> upstream/Hosni
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -19,6 +22,8 @@ parameters:
 framework:
     #esi: ~
     #translator: { fallbacks: ['%locale%'] }
+    templating:
+            engines: ['twig']
     secret: '%secret%'
     router:
         resource: '%kernel.project_dir%/app/config/routing.yml'
@@ -43,7 +48,12 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+<<<<<<< HEAD
     form_themes: ['bootstrap_4_layout.html.twig']
+=======
+    form_themes:
+        - 'bootstrap_3_layout.html.twig'
+>>>>>>> upstream/Hosni
 
 # Doctrine Configuration
 doctrine:
@@ -80,6 +90,7 @@ swiftmailer:
 sensio_framework_extra:
    router:
         annotations: false
+
 fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
     firewall_name: main
@@ -90,3 +101,18 @@ fos_user:
         address: "tech-events@esprit.tn"
         sender_name: "tech-events"
 
+<<<<<<< HEAD
+=======
+fos_comment:
+    db_driver: orm
+    class:
+        model:
+            comment: BlogBundle\Entity\Comment
+            thread: BlogBundle\Entity\Thread
+            vote: BlogBundle\Entity\Vote
+
+
+
+assetic:
+    bundles: [ "FOSCommentBundle" ]
+>>>>>>> upstream/Hosni

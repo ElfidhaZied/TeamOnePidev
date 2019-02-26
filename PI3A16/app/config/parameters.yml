@@ -7,8 +7,13 @@ parameters:
     database_password: null
     mailer_transport: gmail
     mailer_host: smtp.gmail.com
+<<<<<<< HEAD
     mailer_user: elfidha95@gmail.com
     mailer_password: 20208909
+=======
+    mailer_user: hosni.ayachi.98@gmail.com
+    mailer_password: AnimeAmv123
+>>>>>>> upstream/Hosni
     mailer_port: 465
     mailer_encryption: ssl
     secret: ThisTokenIsNotSoSecretChangeIt
