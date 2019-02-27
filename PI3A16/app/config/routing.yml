@@ -1,10 +1,8 @@
-<<<<<<< HEAD
+
 back_office_index:
     resource: "@BackOfficeIndexBundle/Resources/config/routing.yml"
     prefix:   /bo
 
-=======
->>>>>>> upstream/Hosni
 blog:
     resource: "@BlogBundle/Resources/config/routing.yml"
     prefix:   /

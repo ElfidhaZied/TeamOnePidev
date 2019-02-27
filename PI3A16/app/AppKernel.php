@@ -30,11 +30,10 @@ class AppKernel extends Kernel
             new ProfilingBundle\ProfilingBundle(),
             new ReservationBundle\ReservationBundle(),
             new BlogBundle\BlogBundle(),
-
             new BackOfficeIndexBundle\BackOfficeIndexBundle(),
-
-
-
+            new BackOfficeIndexBundle\BackOfficeIndexBundle(),
+            new Vich\UploaderBundle\VichUploaderBundle(),
+            new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(),
 
         ];
 
